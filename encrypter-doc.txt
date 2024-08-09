@@ -1,0 +1,26 @@
+Encryptioner documentation - 
+
+Sample text = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG" - (has to be capitals)
+
+Random indicies from chatGPT for each letter ∼
+
+index(1) = [H, G, S, K, W, Y, O, X, P, Z, E, M, B, U, I, T, N, D, A, J, V, Q, L, C, F, R]
+index(2) = [P, U, Y, D, K, R, T, G, V, N, Q, O, E, S, X, H, F, A, C, I, M, L, J, B, W, Z]
+index(3) = [C, Y, O, M, N, E, F, H, U, I, V, R, X, G, J, S, L, K, T, Z, B, Q, W, D, P, A]
+index(4) = [T, G, I, W, J, O, F, A, K, R, H, V, N, S, M, D, L, X, E, Z, U, Q, P, Y, B, C]
+index(5) = [L, C, Z, P, U, Y, O, R, M, X, H, T, D, N, E, J, S, W, G, I, V, K, B, A, F, Q]
+index(6) = [U, B, Q, D, I, F, E, V, C, L, N, R, H, G, O, W, Y, M, S, T, J, Z, K, X, C, A]
+index(7) = [K, S, A, X, M, B, F, R, G, J, Y, P, L, I, D, V, C, Q, N, U, H, W, E, O, T, W]
+index(8) = [P, Y, W, J, S, H, B, O, V, Z, G, Q, M, I, N, C, F, X, U, A, R, T, K, E, L, D]
+index(9) = [F, W, C, U, P, K, R, O, Y, G, N, S, A, B, X, M, Z, V, L, D, I, Q, E, J, T, H]
+ 
+A random number generator goes from 1 - 9 to determine how many times to move along in index(i). This number will always be at the end of the text for the decrypter to determine how many times to go back in index(i). There will also be a random number from 1 - 9 to determine which index to use.
+
+The sample text could become "1NGM1 3PRXMB3 5PENFV7 3SRQ9 4FPLBD2 2AXCO6 1FZJ9 5YZRH5 3EVQ8"
+
+However, this works RANDOMLY so there are WAY more ways to make that sample text
+
+The maths to work how many combinations there are is:			
+9 (for random index) * 9 (for random times to move the letter through index) = 81
+
+Then, there are 9 words in that sample text so 81^9 which is == 150,094,635,296,999,121 (over 150 quadrillion different combinations!)
