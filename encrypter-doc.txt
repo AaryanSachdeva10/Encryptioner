@@ -2,7 +2,7 @@ Encryptioner documentation -
 
 Sample text = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG" - (has to be capitals)
 
-Random indicies from chatGPT for each letter ∼
+Random indicies from ChatGPT for each letter ∼
 
 index(1) = [H, G, S, K, W, Y, O, X, P, Z, E, M, B, U, I, T, N, D, A, J, V, Q, L, C, F, R]
 index(2) = [P, U, Y, D, K, R, T, G, V, N, Q, O, E, S, X, H, F, A, C, I, M, L, J, B, W, Z]
@@ -23,4 +23,4 @@ However, this works RANDOMLY so there are WAY more ways to make that sample text
 The maths to work how many combinations there are is:			
 9 (for random index) * 9 (for random times to move the letter through index) = 81
 
-Then, there are 9 words in that sample text so 81^9 which is == 150,094,635,296,999,121 (over 150 quadrillion different combinations!)
+Then, there are 9 words in that sample text so 81^9 which is 150,094,635,296,999,121 (over 150 quadrillion different combinations)
